@@ -8,7 +8,7 @@ sec = 4
 
 - #### What networks are used in Kemo Labs?
 
-  192.168.42.0/24 and 192.168.46.0/24 are routed through the VPN tunnel with the base domain of kemo.labs and mgmt.kemo.labs respectively.  DHCP provides IP pools starting at x.x.x.125
+  `192.168.42.0/24` and `192.168.46.0/24` are routed through the VPN tunnel with the base domain of `kemo.labs` and `mgmt.kemo.labs` respectively.  DHCP provides IP pools starting at `x.x.x.125`
 
 - #### How do I add DNS entries and assign static IPs?
 
