@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/minimal:latest as BUILDER
+FROM registry.access.redhat.com/ubi8/ubi-minimal:latest as BUILDER
 
 WORKDIR /builder-root
 COPY . .
