@@ -31,11 +31,11 @@ sec = 4
 
 - #### How do I create a VM?
 
-  The systems all have RHEL 8.3 installed and run Libvirt/KVM as the hypervisor.  This is a sample Bash script that can set up a VM on the Raza, and one to set up multiple VMs on Serenity and Rocinante.  You can monitor/access them via Cockpit as well.
+  The systems all have RHEL 8.3 installed and run Libvirt/KVM as the hypervisor.  This is a sample Bash script that can [set up a VM on the Raza](https://github.com/kenmoini/homelab/blob/main/bash_scripts/setup_idm.sh), and one to [set up multiple VMs on Serenity and Rocinante](https://github.com/kenmoini/homelab/blob/main/bash_scripts/ocp4_ai_virt-install.sh).  You can monitor/access them via Cockpit as well.
 
 - #### How do I deploy a Container/Pod with Podman?
 
-  Shared Podman usage on the Raza is not allowed because this serves a few containers that provide core services to the environment such as DNS, NFS, and VPN - please create a RHEL VM and deploy Podman and your containers there.  You can use this Ansible Playbook to quickly do so.
+  Shared Podman usage on the Raza is not allowed because this serves a few containers that provide core services to the environment such as DNS, NFS, and VPN - please create a RHEL VM and deploy Podman and your containers there.  You can [use this Ansible Playbook to quickly do so](https://github.com/kenmoini/homelab/blob/main/ansible-collections/deploy-podman.yml).
 
 - #### Is there a Satellite server?
 
