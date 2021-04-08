@@ -53,3 +53,7 @@ You have cluster-admin access to the primary cluster and there should be plenty 
 - #### Why not use something like RHV or ESXi?
 
   It's a royal pain in the ass to pass PCI devices through to VMs in RHV and to pass GPUs through vSphere you need Enterprise Plus licenses which are not included in the VMUG Advantage subscription and are not something I'm going to pay for...so RHEL + Libvirt it is.
+
+- #### Who else has access to this environment?
+
+  This environment is just able to be accessed by about 10 Red Hat SAs.
