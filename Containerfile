@@ -2,7 +2,8 @@ FROM registry.access.redhat.com/ubi8/ubi-minimal:latest as BUILDER
 
 WORKDIR /builder-root
 COPY . .
-RUN git submodule update --init \
+RUN microdnf install -y git \
+ && git submodule update --init \
  && ./bin/hugo
 
 FROM registry.access.redhat.com/ubi8/nginx-118:latest
