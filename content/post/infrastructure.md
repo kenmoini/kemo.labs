@@ -7,7 +7,7 @@ sec = 2
 
 
 Below is a listing of the infrastructure that can be utilized as part of Kemo Labs:
-
+<!---
 ### Rocinante
 
 The Rocinante (rocinante.kemo.labs) is a Dell R720 server with the following configuration:
@@ -34,7 +34,7 @@ Serenity (serenity.kemo.labs) is a Dell R720 server with the following configura
   - [Cockpit](https://serenity.kemo.labs:9090/)
   - Libvirt/KVM
   - Half the nodes of the [Core OpenShift cluster](https://console-openshift-console.apps.core-ocp.kemo.labs/)
-
+--->
 ### Raza
 
 The Raza (raza.kemo.labs) is a custom-built AMD EPYC server with the following configuration:
@@ -47,3 +47,4 @@ The Raza (raza.kemo.labs) is a custom-built AMD EPYC server with the following c
   - Libvirt/KVM
   - Podman
   - Core network services such as DNS, NFS, and VPN
+  - Running the nodes of the [Core OpenShift cluster](https://console-openshift-console.apps.core-ocp.kemo.labs/)
