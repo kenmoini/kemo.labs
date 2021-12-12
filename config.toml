@@ -1,4 +1,4 @@
-baseURL = "http://kemo.labs/"
+baseURL = "//kemo.labs/"
 languageCode = "en-us"
 title = "Kemo Labs"
 theme = "onedly"
