@@ -1,0 +1,25 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: kemo-labs-site
+  annotations:
+    argocd.argoproj.io/sync-wave: "5"
+  labels:
+    app: kemo-labs-site
+    service: kemo-labs-site
+    component: kemo-labs-site
+    id: kemo-labs-site
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: kemo.labs
+      http:
+        paths:
+          - path: "/"
+            pathType: Prefix
+            backend:
+              service:
+                name: kemo-labs-site
+                port:
+                  number: 8080

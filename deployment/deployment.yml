@@ -1,0 +1,41 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kemo-labs-site
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
+  labels:
+    app: kemo-labs-site
+    service: kemo-labs-site
+    component: kemo-labs-site
+    id: kemo-labs-site
+spec:
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: kemo-labs-site
+      service: kemo-labs-site
+      component: kemo-labs-site
+      id: kemo-labs-site
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: kemo-labs-site
+        service: kemo-labs-site
+        component: kemo-labs-site
+        id: kemo-labs-site
+    spec:
+      containers:
+        - name: kemo-labs-site
+          resources:
+            limits:
+              cpu: 100m
+              memory: 128Mi
+            requests:
+              cpu: 50m
+              memory: 64Mi
+          image: quay.io/kenmoini/kemo.labs:95e3758
+          ports:
+            - containerPort: 8080

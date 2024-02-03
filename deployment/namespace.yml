@@ -1,0 +1,12 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kemo-labs-site
+  annotations:
+    argocd.argoproj.io/sync-wave: "0"
+  labels:
+    app: kemo-labs-site
+    service: kemo-labs-site
+    component: kemo-labs-site
+    id: kemo-labs-site
