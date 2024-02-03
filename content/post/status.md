@@ -12,9 +12,7 @@ sec = 5
 
 ### Planned Outages
 
-In case there are issues that need more than a few minutes of interuption to resolve, they will be planned and listed here:
-
-- **April 13th** - Core OpenShift Cluster redeployment on OCP 4.7
+In case there are issues that need more than a few minutes of interuption to resolve, they will be planned and listed here.
 
 ### Current Outages
 
