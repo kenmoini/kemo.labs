@@ -6,7 +6,6 @@ namespace: kemo-labs-site
 
 resources:
   - namespace.yml
-  - secret.yml
   - deployment.yml
   - service.yml
   - ingress.yml
