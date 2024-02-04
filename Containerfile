@@ -4,7 +4,7 @@ WORKDIR /builder-root
 COPY . /builder-root
 RUN microdnf install -y git \
  && git submodule update --init \
- && ./bin/hugo
+ && ./bin/hugo-linux-$(uname -m)
 
 FROM registry.access.redhat.com/ubi8/nginx-120:latest
 
