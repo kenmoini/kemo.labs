@@ -36,6 +36,6 @@ spec:
             requests:
               cpu: 50m
               memory: 64Mi
-          image: quay.io/kenmoini/kemo.labs:2d1a719
+          image: quay.io/kenmoini/kemo.labs:e37b2a0
           ports:
             - containerPort: 8080
