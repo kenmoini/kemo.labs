@@ -12,6 +12,10 @@ metadata:
     id: kemo-labs-site
 spec:
   ingressClassName: nginx
+  tls:
+    - hosts:
+        - kemo.labs
+        - site-kemo-labs.apps.k8s.kemo.labs
   rules:
     - host: kemo.labs
       http:

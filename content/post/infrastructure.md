@@ -54,18 +54,6 @@ The Serenity (serenity.kemo.labs) is a Dell R730 server with the following confi
   - Running the Infrastructure nodes of the [Core OpenShift cluster](https://console-openshift-console.apps.core-ocp.d70.lab.kemo.network/)
 - [iDRAC](https://serenity.mgmt.kemo.labs/)
 
-### Deep Thought
-
-Deep Thought (deep-thought.kemo.labs) is the TrueNAS Scale storage server that is installed on a QNAP TVS-h1688X with the following configuration:
-
-- Xeon W-1250 6C/12T
-- 128GB RAM
-- 2x512GB Mirrored Boot Drives
-- 8x12TB Drives
-- 4x16TB Drives
-- 4x1TB NVMe
-- [TrueNAS Scale Dashboard](https://deep-thought.kemo.labs/)
-
 ### Maximus
 
 Maximus (maximus.kemo.labs) is a Ampere Altra Developer Platform system with the following configuration:
@@ -117,3 +105,15 @@ Many of the primary services are provided by a 3-node Kubernetes cluster.  It se
   - Pi-Hole
   - [Vault](http://vault.apps.k8s.kemo.labs/)
   - Step CA
+
+### Deep Thought
+
+Deep Thought (deep-thought.kemo.labs) is the TrueNAS Scale storage server that is installed on a QNAP TVS-h1688X with the following configuration:
+
+- Xeon W-1250 6C/12T
+- 128GB RAM
+- 2x512GB Mirrored Boot Drives
+- 8x12TB Drives
+- 4x16TB Drives
+- 4x1TB NVMe
+- [TrueNAS Scale Dashboard](https://deep-thought.kemo.labs/)

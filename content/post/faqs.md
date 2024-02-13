@@ -8,14 +8,16 @@ sec = 4
 
 - #### What networks are used in Kemo Labs?
 
-  `192.168.42.0/24` and `192.168.46.0/24` are routed through the VPN tunnel with the base domain of `kemo.labs` and `mgmt.kemo.labs` respectively.  DHCP provides IP pools starting at `x.x.x.125`
+  - `192.168.40.0/23` - `wireless.kemo.labs` - Trusted Wireless VLAN 40, DHCP starting at 192.168.41.11
+  - `192.168.42.0/24` - `kemo.labs` - Main untagged VLAN, DHCP starting at 192.168.42.100
+  - `192.168.44.0/24` - `strangers.kemo.labs` - Untrusted Wireless VLAN 40, DHCP starting at 192.168.44.6
+  - `192.168.46.0/24` - `mgmt.kemo.labs` - Management VLAN 46, DHCP starting at 192.168.46.100 though most addresses are statically defined
+  - `192.168.70.0/23` - `d70.kemo.labs` - Disconnected VLAN 70, use of the Outbound Proxy is needed, DHCP starting at 192.168.71.1
+  - `192.168.88.0/24` - `guests.kemo.labs` - Untrusted Guest Wireless VLAN 88, DHCP starting at 192.168.88.6.  Clients are isolated from other networks.
 
 - #### How do I add DNS entries and assign static IPs?
 
-  Submit a Pull Request with your justifications and modifications to the following two files:
-
-  - https://github.com/kenmoini/homelab/blob/main/containers-as-a-service/dns-core-1/volumes/etc-conf/zones.yml
-  - https://github.com/kenmoini/homelab/blob/main/containers-as-a-service/dns-core-2/volumes/etc-conf/zones.yml
+  This can be done via PHPIPAM which will manage the entries in the PowerDNS Authoritative Servers
 
 - #### I don't have sudo access to X command on these servers - what gives?
 
@@ -48,11 +50,7 @@ You have cluster-admin access to the primary cluster and there should be plenty 
 
 - #### Can I use this and the Red Hat VPN at the same time?
 
-  Technically yes since the network blocks do not overlap and split-DNS is utilized however there is no easy way to do so currently without A) setting one VPN active on your gateway/router or B) using multiple OpenVPN clients and tun/tap network adapters on your system.
-
-- #### Why not use something like RHV or ESXi?
-
-  It's a royal pain in the ass to pass PCI devices through to VMs in RHV and to pass GPUs through vSphere you need Enterprise Plus licenses which are not included in the VMUG Advantage subscription and are not something I'm going to pay for...so RHEL + Libvirt it is.
+  Technically yes since the network blocks do not overlap and split-DNS is utilized.
 
 - #### Who else has access to this environment?
 
