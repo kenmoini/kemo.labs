@@ -12,6 +12,8 @@ sec = 4
   - `192.168.42.0/24` - `kemo.labs` - Main untagged VLAN, DHCP starting at 192.168.42.100
   - `192.168.44.0/24` - `strangers.kemo.labs` - Untrusted Wireless VLAN 40, DHCP starting at 192.168.44.6
   - `192.168.46.0/24` - `mgmt.kemo.labs` - Management VLAN 46, DHCP starting at 192.168.46.100 though most addresses are statically defined
+  - `192.168.60.0/23` - `v60.kemo.labs` - OpenShift dedicated VLAN 60, DHCP starting at 192.168.61.11, previous space reserved for static IPs
+  - `192.168.69.0/24` - `vpn.kemo.labs` - OpenVPN managed VLAN 69
   - `192.168.70.0/23` - `d70.kemo.labs` - Disconnected VLAN 70, use of the Outbound Proxy is needed, DHCP starting at 192.168.71.1
   - `192.168.88.0/24` - `guests.kemo.labs` - Untrusted Guest Wireless VLAN 88, DHCP starting at 192.168.88.6.  Clients are isolated from other networks.
 

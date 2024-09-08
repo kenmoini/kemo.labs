@@ -100,11 +100,11 @@ Many of the primary services are provided by a 3-node Kubernetes cluster.  It se
 - 512GB local NVMe for boot
 - 1TB local SSD for Longhorn provided storage
 - Services include:
-  - [ArgoCD](http://argocd.apps.k8s.kemo.labs/)
   - PowerDNS
   - Pi-Hole
-  - [Vault](http://vault.apps.k8s.kemo.labs/)
-  - Step CA
+  - [ArgoCD](https://argocd.apps.k8s.kemo.labs/)
+  - [Vault](https://vault.apps.k8s.kemo.labs/)
+  - [Step CA](https://stepca.apps.k8s.kemo.lab/)
 
 ### Deep Thought
 
@@ -115,5 +115,20 @@ Deep Thought (deep-thought.kemo.labs) is the TrueNAS Scale storage server that i
 - 2x512GB Mirrored Boot Drives
 - 8x12TB Drives
 - 4x16TB Drives
-- 4x1TB NVMe
+- 4x4TB NVMe for Data
+- 4x1TB NVMe for Cache
 - [TrueNAS Scale Dashboard](https://deep-thought.kemo.labs/)
+
+### Normandy 
+
+Normandy (normandy.kemo.labs) is the core service host for the network and is a Minisforum MS-01 system.
+
+> TODO
+
+### Rocinante
+
+Rocinante (rocinante.kemo.labs) is the ESXi host used for dev/testing purposes in the lab.  It also runs on an Minisforum MS-01.
+
+vcenter.kemo.labs
+
+> TODO
